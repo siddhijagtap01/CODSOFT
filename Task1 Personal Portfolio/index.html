@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            line-height: 1.6;
+            font-size: larger;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .skills ul {
+            list-style: square;
+            margin-left: 20px;
+        }
+
+        .projects {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            background: #ecf0f1;
+            padding: 10px;
+            border-radius: 8px;
+            width: 30%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #2c3e50;
+            color: white;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 12px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1> Siddhi's Portfolio</h1>
+    <p>Student | Beginner Web Developer | Creative Learner</p>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 style="margin-bottom:15px;">About Me</h2>
+
+        <div style="display:flex; flex-wrap:wrap; align-items:center;">
+
+            <!-- Left Side Text -->
+            <div style="flex:1; min-width:250px; padding:10px;font-size: larger ;">
+                <p>Hello! I am a Third year IT student who is learning web development. I enjoy creating simple and creative websites using HTML and CSS. I am passionate about technology and always ready to learn new skills.</p>
+
+            </div>
+
+            <!-- Right Side Photo -->
+            <div style="flex:1; min-width:300px; text-align:center;">
+                <img src=https://swisstech.co.in/wp-content/uploads/2021/03/INFORMATIVE-WEBSITE-DEVELOPMENT-1.png alt="My Photo" style="width:500px; border-radius:20px; box-shadow:0 0 12px rgb(255, 255, 255);">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Problem Solving</li>
+            <li>Team Work</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="projects">
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A simple portfolio created using HTML and CSS to showcase my information.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Event Management System</h3>
+                <p>Event Management System is a web-based application that helps users plan, organize, and manage events.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Student Feedback System</h3>
+                <p>Clean form for rating teachers/courses. Star rating + comment box. Admin dashboard to view analytics.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section>
+        <h2>Resume</h2>
+        <p>You can download my resume from here:</p>
+        <a class="btn" href="#">Download Resume</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: siddhi@gmail.com</p>
+        <p>Phone: +91 987XXXXXXX</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Siddhi Jagtap | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
